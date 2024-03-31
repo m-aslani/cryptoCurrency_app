@@ -1,0 +1,39 @@
+tr{
+    height: 80px;
+    border-bottom: 1px solid #22262e;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.symbol{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.symbol img{
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.symbol span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #9fa6b7;
+}
+
+.positive{
+    color: #57bc7c;
+}
+
+.negative{
+    color: #d33636;
+}
+
+@media (max-width: 600px){
+
+    td{
+        padding: 0 10px;
+    }
+}
