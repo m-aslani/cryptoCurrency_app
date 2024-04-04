@@ -1,0 +1,130 @@
+.searchBox{
+    margin-top: 50px;
+    position: relative;
+}
+ 
+.searchBox input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #23242e;
+    /* border: none; */
+    border-radius: 5px;
+    outline: none;
+    transition: all .2s ease-in-out;
+    border: 2px solid #9fa6b7;
+}
+
+.searchBox input:focus{
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+
+    0% {
+        border-color: #57bc7c;
+        color: #57bc7c;
+    }
+
+    10% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+    20% {
+        border-color: rgb(255, 0, 128);
+        color: hotpink;
+    }
+
+    30% {
+        border-color: #d33636;
+        color: #d33636;
+    }
+
+    40% {
+        border-color: rgb(59, 1, 59);
+        color: purple;
+    }
+
+    50% {
+        border-color: rgb(9, 0, 186);
+        color: yellow;
+
+    }
+
+    60% {
+        border-color: rgb(0, 187, 128);
+        color: cyan;
+    }
+
+    70% {
+        border-color: rgb(227, 255, 104);
+        color: skyblue;
+    }
+
+    80% {
+        border-color: rgb(255, 132, 70);
+        color: pink;
+    }
+
+    90% {
+        border-color: #ff84bb;
+        color: #d33636;
+    }
+
+    100% {
+        border-color: rgb(114, 239, 255);
+        color: yellow;
+    }
+}
+
+.searchBox select{
+    background-color: #23242e;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+
+.searchBox select:focus{
+    outline: none;
+}
+
+.showSearch{
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: #18181c;
+    border: 2px solid #22262e;
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.showSearch li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #22262e;
+}
+
+.showSearch li img{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
