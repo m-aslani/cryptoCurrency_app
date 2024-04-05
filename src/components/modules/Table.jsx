@@ -3,7 +3,7 @@ import { ThreeDots } from "react-loader-spinner";
 
 import styles from "./Table.module.css";
 
-function Table({ coins, loading ,currency}) {
+function Table({ coins, loading ,currency , setChart}) {
   return (
     <div className={styles.container}>
       {loading ? (
@@ -31,7 +31,7 @@ function Table({ coins, loading ,currency}) {
           </thead>
           <tbody>
             {coins.map((coin) => (
-              <TableRow key={coin.id} coin={coin} currency={currency}/>
+              <TableRow key={coin.id} coin={coin} currency={currency} setChart={setChart}/>
             ))}
           </tbody>
         </table>
